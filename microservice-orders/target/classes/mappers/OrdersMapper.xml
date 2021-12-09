@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oracle.shop.orders.mapper.OrdersMapper">
+  <resultMap id="BaseResultMap" type="com.oracle.shop.orders.po.Orders">
+    <!--@mbg.generated-->
+    <!--@Table orders-->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="orders_money" jdbcType="DECIMAL" property="ordersMoney" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="orders_status" jdbcType="CHAR" property="ordersStatus" />
+    <result column="user_id" jdbcType="CHAR" property="userId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, orders_money, create_time, orders_status, user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from orders
+    where id = #{id,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    <!--@mbg.generated-->
+    delete from orders
+    where id = #{id,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.oracle.shop.orders.po.Orders">
+    <!--@mbg.generated-->
+    insert into orders (id, orders_money, create_time, 
+      orders_status, user_id)
+    values (#{id,jdbcType=CHAR}, #{ordersMoney,jdbcType=DECIMAL}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{ordersStatus,jdbcType=CHAR}, #{userId,jdbcType=CHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oracle.shop.orders.po.Orders">
+    <!--@mbg.generated-->
+    insert into orders
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null and id != ''">
+        id,
+      </if>
+      <if test="ordersMoney != null">
+        orders_money,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="ordersStatus != null and ordersStatus != ''">
+        orders_status,
+      </if>
+      <if test="userId != null and userId != ''">
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null and id != ''">
+        #{id,jdbcType=CHAR},
+      </if>
+      <if test="ordersMoney != null">
+        #{ordersMoney,jdbcType=DECIMAL},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="ordersStatus != null and ordersStatus != ''">
+        #{ordersStatus,jdbcType=CHAR},
+      </if>
+      <if test="userId != null and userId != ''">
+        #{userId,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oracle.shop.orders.po.Orders">
+    <!--@mbg.generated-->
+    update orders
+    <set>
+      <if test="ordersMoney != null">
+        orders_money = #{ordersMoney,jdbcType=DECIMAL},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="ordersStatus != null and ordersStatus != ''">
+        orders_status = #{ordersStatus,jdbcType=CHAR},
+      </if>
+      <if test="userId != null and userId != ''">
+        user_id = #{userId,jdbcType=CHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oracle.shop.orders.po.Orders">
+    <!--@mbg.generated-->
+    update orders
+    set orders_money = #{ordersMoney,jdbcType=DECIMAL},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      orders_status = #{ordersStatus,jdbcType=CHAR},
+      user_id = #{userId,jdbcType=CHAR}
+    where id = #{id,jdbcType=CHAR}
+  </update>
+</mapper>

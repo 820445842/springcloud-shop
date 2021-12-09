@@ -1,0 +1,4 @@
+com\oracle\shop\common\rollback\UserFeignServiceRollBack.class
+com\oracle\shop\common\feign\UserFeignService.class
+com\oracle\shop\common\vo\ResponseVo.class
+com\oracle\shop\common\dto\OrdersUserDto.class

@@ -1,0 +1,3 @@
+com\oracle\shop\gateway\filter\RateLimiterFilter.class
+com\oracle\shop\gateway\filter\AuthenticationFliter.class
+com\oracle\shop\gateway\ZuulServer.class

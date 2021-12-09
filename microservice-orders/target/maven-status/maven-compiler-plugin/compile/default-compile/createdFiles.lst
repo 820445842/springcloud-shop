@@ -1,0 +1,7 @@
+com\oracle\shop\orders\mapper\OrdersMapper.class
+com\oracle\shop\orders\po\Orders.class
+com\oracle\shop\orders\OrdersServer.class
+com\oracle\shop\orders\service\impl\OrdersServiceImpl.class
+com\oracle\shop\orders\vo\OrdersUserVo.class
+com\oracle\shop\orders\service\OrdersService.class
+com\oracle\shop\orders\controller\OrdersController.class

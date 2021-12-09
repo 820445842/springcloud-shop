@@ -1,0 +1,6 @@
+com\oracle\shop\user\UserServer.class
+com\oracle\shop\user\po\SysUser.class
+com\oracle\shop\user\service\impl\SysUserServiceImpl.class
+com\oracle\shop\user\controller\UserController.class
+com\oracle\shop\user\service\SysUserService.class
+com\oracle\shop\user\mapper\SysUserMapper.class

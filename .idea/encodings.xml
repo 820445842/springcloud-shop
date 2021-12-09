@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cas-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cas-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-orders" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-orders/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tx-manager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tx-manager/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
